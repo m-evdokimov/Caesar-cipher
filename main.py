@@ -1,12 +1,23 @@
 def cipher(method=1):
     text = input('Input string: ')
-    s = int(input('Input shift: '))
+    s = None
+    while 1:
+        try:
+            s = abs(int(input('Input shift: ')))
+        except ValueError:
+            print('Incorrect input! Try again')
+            continue
+        break
+
     if method == -1:
         s *= -1
     result = ''
     abc = ' abcdefghijklmnopqrstuvwxyz'
     for i in text:
-        result += abc[(abc.find(i) + s) % 27]
+        if i in abc:
+            result += abc[(abc.find(i) + s) % 27]
+        else:
+            result += i
     print(result)
 
 def main():
@@ -19,7 +30,7 @@ def main():
         elif ans == 0:
             break
         else:
-            raise KeyError('Incorrect input')
+            print('Incorrect input! Try again!')
 
 
 if __name__ == '__main__':
