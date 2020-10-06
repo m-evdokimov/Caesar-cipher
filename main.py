@@ -4,7 +4,7 @@ def cipher(method=1):
     while 1:
         try:
             s = abs(int(input('Input shift: ')))
-        except ValueError:
+        except ValueError:                          #finding non-int values
             print('Incorrect input! Try again')
             continue
         break
@@ -12,12 +12,12 @@ def cipher(method=1):
     if method == -1:
         s *= -1
     result = ''
-    abc = ' abcdefghijklmnopqrstuvwxyz'
+    abc = ' abcdefghijklmnopqrstuvwxyz'             # english alphabet for encrypting
     for i in text:
         if i in abc:
-            result += abc[(abc.find(i) + s) % 27]
+            result += abc[(abc.find(i) + s) % 27]   # add encrypted letter
         else:
-            result += i
+            result += i                             # add other characters
     print(result)
 
 def main():
