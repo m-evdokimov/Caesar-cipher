@@ -1,3 +1,6 @@
+import logging
+
+
 def cipher(method=1):
     text = input('Input string: ')
     s = None
