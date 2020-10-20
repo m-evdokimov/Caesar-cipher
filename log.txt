@@ -1,0 +1,21 @@
+INFO 2020-10-20 15:43:09,687 - starting...
+INFO 2020-10-20 15:43:11,558 - user input from dialogue window: 1
+INFO 2020-10-20 15:43:11,558 - in cipher function (encrypting)
+INFO 2020-10-20 15:43:14,124 - input string: i am caesar
+INFO 2020-10-20 15:43:14,945 - input shift: 3
+INFO 2020-10-20 15:43:14,945 - returning the result: lcdpcfdhvdu
+INFO 2020-10-20 15:43:22,686 - user input from dialogue window: -1
+INFO 2020-10-20 15:43:22,686 - in cipher function (decrypting)
+INFO 2020-10-20 15:43:32,069 - input string: lcdpcfdhvdu
+INFO 2020-10-20 15:43:40,945 - got an exception, refreshing...
+INFO 2020-10-20 15:43:47,199 - input shift: 3
+INFO 2020-10-20 15:43:47,199 - returning the result: i am caesar
+INFO 2020-10-20 15:43:55,481 - user input from dialogue window: unexpected mistake
+INFO 2020-10-20 15:43:55,481 - got incorrect key, getting back...
+INFO 2020-10-20 15:44:19,972 - user input from dialogue window: 1
+INFO 2020-10-20 15:44:19,972 - in cipher function (encrypting)
+INFO 2020-10-20 15:44:45,071 - input string: hello world
+INFO 2020-10-20 15:44:48,423 - input shift: 26
+INFO 2020-10-20 15:44:48,423 - returning the result: gdkknzvnqkc
+INFO 2020-10-20 15:44:55,849 - user input from dialogue window: 0
+INFO 2020-10-20 15:45:15,108 - program was closed correcly!
